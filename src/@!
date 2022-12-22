@@ -1,0 +1,517 @@
+1	A sp Carbon atom of -C#N [Mono]
+2	A sp3 Oxygen atom of -OH [Mono]
+3	A sp3 Oxygen atom of -R-O-R’ [Bi]
+4	A sp3 Oxygen atom of -C(=O)OH/-P(=O)(O)(O)OH/-S(=O)(=O)(R)OH groups [Mono]
+5	A sp3 Oxygen atom of -C(=O)O (Anhydride group) [Mono]
+6	A sp3 Sulfur atom of Thiol (-R-SH) [Mono]
+7	A sp3 Sulfur atom of Thioacid (-C(=S)SH) [Mono]
+8	A sp3 Sulfur atom of Thioether (-R-S-R’) [Bi]
+9	A sp2 Phosphorus atom of C=P containing moiety [Bi/Tetra]
+10	A sp2 Carbon atom of Aldehyde (-R-C(=O)H) [Mono]
+11	A sp2 Carbon atom of Thioaldehyde (-R-C(=S)H) [Mono]
+12	-R-C(=O)R’- group not in ring
+13	A trivalent Phosphorus atom attached with three carbon atoms with single bond [Tri]
+14	-R-C(=O)O- group not in ring
+15	A sp2 Carbon atom contains CS2, CO1 and CH1 groups [Mono]
+16	Amide group
+17      A sp2 Carbon atom contains CS2, CN1 and CH1 groups [Mono]
+18	A sp2 Carbon atom of Acyl chloride  [Mono]
+19	A sp2 Carbon atom of Thioacetyl chloride [Mono]
+20	A sp2 Carbon atom of Acetyl bromide [Mono]
+21	A sp2 Carbon atom of Thioacetyl bromide [Mono]
+22	A sp2 Carbon atom of Acetyl fluoride [Mono]
+23	A sp2 Carbon atom of Thioacetyl fluoride [Mono]
+24      A sp2 Carbon atom of Acetyl iodide [Mono]
+25	A sp2 Carbon atom of Thioacetyl iodide [Mono]
+26	A sp3 Nitrogen atom of amine group (primary, secondary, tertiary and Quaternary) [Mono/Bi/Tri/Tetra]
+27	-F group [Mono]
+28	-Cl group [Mono]
+29	-Br group [Mono]
+30	-I group [Mono]
+31	A sp2 Nitrogen atom of N=O containing moiety but not nitrate group [Mono]
+32	A sp3 Phosphorus atom contains PO2 and PO1 groups only (e.g.; Phosphate) [Zero]
+33	A sp3 Phosphorus atom contains PS2 and PO1 groups only [Zero]
+34	A sp3 Phosphorus atom contains PO2, PC1 and PO1 groups only [Bi]
+35      A sp3 Phosphorus atom contains PS2, PC1 and PO1 groups only [Bi]
+36	A sp3 Phosphorus atom contains PO2, PN1 and PO1 groups only [Zero]
+37	A sp3 Phosphorus atom contains PS2, PN1 and PO1 groups only [Zero]
+38      A sp3 Phosphorus atom contains PO2, PC1, PN1 and PO1 groups only [Mono]
+39	A sp3 Phosphorus atom contains PS2, PC1, PN1 and PO1 groups only [Mono]
+40	A sp3 Phosphorus atom contains PO2, PC1 and PN1 only [Bi]
+41	A sp3 Phosphorus atom contains PS2, PC1 and PN1 only [Bi]
+42	A sp3 Phosphorus atom contains PO2 and PC1 groups only [Tri]
+43	A sp3 Phosphorus atom contains PS2 and PC1 groups only [Tri]
+44	A pentavalent Phosphorus-containing compound which does not contains P(=O) or P(=S) groups or, contains with P(=O) or P(=S) and PX1 (X is halogen) groups together [Penta/Tri]
+45	A sp3 Sulfur atom contains SO2 and SO1 group only [Zero]
+46	A sp3 Sulfur atom contains SO2, SC1 and SO1 group only [Mono]
+47	A sp3 Sulfur atom contains SO2, SN1 and SO1 group only [Zero]
+48	A sp3 Sulfur atom contains SO2, SC1 and SN1 group only [Mono]
+49	A sp3 Sulfur atom contains SO2 and SC1 group only [Bi/Tetra]
+50	A sp3 Sulfur atom contains SO2 and SN1 group only [Zero]
+51	A trivalent Sulfur-containing compound [Tri/Bi]
+52	A sp3 Carbon attached with three hydrogen atoms (CH3 group) [Mono]
+53	A sp3 Carbon attached with two hydrogen atoms (CH2 group) [Bi]
+54	A sp3 Carbon attached with one hydrogen atom [Tri]
+55	A sp3 Carbon attached with no hydrogen atom [Zero]
+56	A sp2 Carbon of Carbonate group [Zero]
+57	A sp Carbon of Cyanate group [Zero]
+58	A sp Carbon of Isocyanate group [Zero]
+59	A sp Carbon of Thioisocyanate group [Zero]
+60	A sp3 Carbon contains three F groups [Mono]
+61	A sp3 Carbon contains three Cl groups [Mono]
+62	A sp3 Carbon contains three Br groups [Mono]
+63	A sp3 Carbon contains one or two F groups [Bi/Tri]
+64	A sp3 Carbon contains one or two Cl groups [Bi/Tri]
+65	A sp3 Carbon contains one or two Br groups [Bi/Tri]
+66	A sp3 Carbon contains at least one I group [Tri]
+67	A sp Nitrogen atom of Azide group [Zero]
+68	A sp3 Sulfur atom contains SO2 group [Bi]
+69	A sp2 Nitrogen atom contains NC2 and NO1 groups (e.g.; CC[N+](=C)[O-]) [Mono]
+70	A sp3 Phosphorus atom contains PX1 (X is halogen) group but no double bond [Bi]
+71	Nitroso group
+72	Isocyanide group
+73	Peroxide group
+74	Disulfide group
+75	-C(=S)(S)N
+76	Hydrazine group
+77	Diazene group
+78	-R-C(=P)(C)
+79	-R-C(=P)
+80	Nsp3-O
+81	Nsp3-S
+82	-R-N-N=O
+83	Aromatic oxygen
+84	Aromatic sulfur
+85	Pyridine type nitrogen
+86	Pyrrole nitrogen
+87	Pyridazine nitrogen
+88	Imidazole (N3) nitrogen
+89	Triazole nitrogen
+90	-R-C=C-C=O group not a part of 3/4/5/6-membered ring
+91	-R-C=C-C=C-R’ group not a part of 3/4/5/6-membered ring
+92	-Ar-C=C-R’ group not a part of 3/4/5/6-membered ring
+93	R-N=C-C=O group not a part of 3/4/5/6-membered ring
+94	R-N=C-C=C group not a part of 3/4/5/6-membered ring
+95	R-N=C-C=N group not a part of 3/4/5/6-membered ring
+96	Allylic group (R2C=CR’2)
+97	-R-C#C-R’
+98	C atom in aromatic ring
+99	Bridge Carbon in Anthracene
+100	Bridge Carbon in Phenalene
+101	Aromatic Nitrogen in Oxadiazole
+102	Aromatic Nitrogen in Thiadiazole
+103	Rotatable C-C bond
+104	-R2N-C(=O)NR2 in 3 or 4-membered ring (e.g.; 1,3-Diazetidin-2-one)
+105	-R2N-C(=O)NR2 in 5-membered ring
+106	-R2N-C(=O)NR2 in 6-membered ring
+107	-R2N-C(=O)NR2 in 7-membered ring (e.g.; C1CCNC(=O)NC1)
+108	-R2N-C(=O)NR2 not in ring (e.g.; Urea)
+109	Carbamic-group in 3/4-membered ring
+110	Carbamic-group in 5-membered ring
+111	Carbamic-group in 6-membered ring
+112	Carbamic-group in 7-membered ring
+113	Carbamic-group
+114	Lactam-3/4-membered ring
+115	Lactam-5-membered ring
+116	Lactam-6-membered ring
+117	Lactam-7-membered ring
+118	-R-C(=O)O- in 3/4-membered ring
+119	-R-C(=O)O- in 5-membered ring
+120	-R-C(=O)O- in 6-membered ring
+121	-R-C(=O)O- in 7-membered ring
+122	-R-C(=O)R’- in 3/4-membered ring
+123	-R-C(=O)R’- in 5-membered ring
+124	-R-C(=O)R’- in 6-membered ring
+125	-R-C(=O)R’- in 7-membered ring
+126	Enol tautomer
+127	Imide group (tautomer of amide)
+128	-R-C=C-C=O group in 3/4-member-ring
+129	-R-C=C-C=O group in 5-member-ring
+130	-R-C=C-C=O group in 6-member-ring
+131	-R-C=C-C=C-R’ group in 3/4-member-ring
+132	-R-C=C-C=C-R’ group in 5-member-ring
+133	-R-C=C-C=C-R’ group in 6-member-ring
+134	-Ar-C=C-R’ group in 3/4-member-ring
+135	-Ar-C=C-R’ group in 5-member-ring
+136	-Ar-C=C-R’ group in 6-member-ring
+137	R-N=C-C=O group in 5-member-ring
+138	R-N=C-C=O group in 6-member-ring
+139	R-N=C-C=C group in 5-member-ring
+140	R-N=C-C=C group in 6-member-ring
+141	R-N=C-C=N group in 5-member-ring
+142	R-N=C-C=N group in 6-member-ring
+143	R-N=C-C=S group in 5-member-ring
+144	R-N=C-C=S group in 6-member-ring
+145	R-N=C-C=S group not a part of 3/4/5/6-membered ring
+146	R-N=C-Ph group in 5-member-ring
+147	R-N=C-Ph group in 6-member-ring
+148	R-N=C-Ph group not a part of 3/4/5/6-membered ring
+149	Amine(NH) group in conjugation with one vinyl group
+150	Amine(NH) group in conjugation with two vinyl groups
+151	Amine(NH) in conjugation with both amide and vinyl groups
+152	Amine(NH) in conjugation with both thioamide and vinyl groups
+153	Amine(NH) in conjugation with both imine and vinyl groups
+154	Amine(NH) in conjugation with both amide and thioamide groups
+155	Amine(NH) in conjugation with both amide and imine groups
+156	Amine(NH) in conjugation with both thioamide and imine groups
+157	-R-C(=O)NHR
+158	-R-C(=O)NH-C(=O)(R)
+159	-R-C(=S)NHR
+160	Ether group attached with adjacent vinyl group ((C)O-C-C=C)
+161	Ether group attached with adjacent imine group ((C)O-C-C=N)
+162	C valency if not satisfied
+163	A reactive sulfur containing group (e.g.; -R-S(=C)(O), -R-S(=C)(N), -R-S(=C)(P), -R-S(=C)(S), -R-S(=S), Monovalent sulfur, Aromatic sulfur not thiophene type)
+164	-R-S(=C) [Monovalent sulfur]
+165	N-oxide
+166	Nitrate (-R-NO3) group
+167	-R-PN2 group
+168	Amine in 3 membered ring (C1CN1)
+169	Amine in 4 membered ring (C1CCN1)
+170	Epoxide in 3-membered ring (C1CO1)
+171	Epoxide in 4-membered ring (C1CCO1)
+172	Sulfur in Thioether in 3-membered ring (e.g.; Thiirane)
+173	Sulfur in Thioether in 4-membered ring (e.g.; Thietane)
+174	sp2 Carbon of Carbamothioic group in 3/4-membered ring (e.g.; C1NC(=S)O1)
+175	sp2 Carbon of Carbamothioic group in 5-membered ring
+176	sp2 Carbon of Carbamothioic group in 6-membered ring
+177	sp2 Carbon of Carbamothioic group in 7-membered ring
+178	sp2 Carbon of Carbamothioic group in acyclic system
+179	sp2 Carbon of C(=S)(O)(O) group in 3/4-membered ring
+180	sp2 Carbon of C(=S)(O)(O) group in 5-membered ring
+181	sp2 Carbon of C(=S)(O)(O) group in 6-membered ring
+182	sp2 Carbon of C(=S)(O)(O) group in 7-membered ring
+183	sp2 Carbon of C(=S)(O)(O) group in acyclic system
+184	sp2 Carbon of C(=S)(N)(N) group in 3/4-membered ring
+185	sp2 Carbon of C(=S)(N)(N) group in 5-membered ring
+186	sp2 Carbon of C(=S)(N)(N) group in 6-membered ring
+187	sp2 Carbon of C(=S)(N)(N) group in 7-membered ring
+188	sp2 Carbon of C(=S)(N)(N) group in acyclic system
+189	sp2 Carbon of C(=S)()(S) group in 3/4-membered ring
+190	sp2 Carbon of C(=S)()(S) group in 5-membered ring
+191	sp2 Carbon of C(=S)()(S) group in 6-membered ring
+192	sp2 Carbon of C(=S)()(S) group in 7-membered ring
+193	sp2 Carbon of C(=S)()(S) group in acyclic system
+194	sp2 Carbon of C(=S)(C)(N) group in 3/4-membered ring
+195	sp2 Carbon of C(=S)(C)(N) group in 5-membered ring
+196	sp2 Carbon of C(=S)(C)(N) group in 6-membered ring
+197	sp2 Carbon of C(=S)(C)(N) group in 7-membered ring
+198	sp2 Carbon of C(=S)(C)(N) group in acyclic system
+199	sp2 Carbon of C(=S)(C)(O) group in 3/4-membered ring
+200	sp2 Carbon of C(=S)(C)(O) group in 5-membered ring
+201	sp2 Carbon of C(=S)(C)(O) group in 6-membered ring
+202	sp2 Carbon of C(=S)(C)(O) group in 7-membered ring
+203	sp2 Carbon of C(=S)(C)(O) group in acyclic system
+204	-R-C(=O)S- in 3/4-membered ring
+205	-R-C(=O)S- in 5-membered ring
+206	-R-C(=O)S- in 6-membered ring
+207	-R-C(=O)S- in 7-membered ring
+208	-R-C(=O)S- group not in ring
+209	sp2 Carbon of C(=S)(C)(C) group in 3/4-membered ring
+210	sp2 Carbon of C(=S)(C)(C) group in 5-membered ring
+211	sp2 Carbon of C(=S)(C)(C) group in 6-membered ring
+212	sp2 Carbon of C(=S)(C)(C) group in 7-membered ring
+213	sp2 Carbon of C(=S)(C)(C) group in acyclic system
+214	sp2 Carbon of C(=N)(N)(O) group in 3/4-membered ring
+215	sp2 Carbon of C(=N)(N)(O) group in 5-membered ring
+216	sp2 Carbon of C(=N)(N)(O) group in 6-membered ring
+217	sp2 Carbon of C(=N)(N)(O) group in 7-membered ring
+218	sp2 Carbon of C(=N)(N)(O) group in acyclic system
+219	sp2 Carbon of C(=N)(O)(O) group in 3/4-membered ring
+220	sp2 Carbon of C(=N)(O)(O) group in 5-membered ring
+221	sp2 Carbon of C(=N)(O)(O) group in 6-membered ring
+222	sp2 Carbon of C(=N)(O)(O) group in 7-membered ring
+223	sp2 Carbon of C(=N)(O)(O) group in acyclic system
+224	sp2 Carbon of C(=N)(N)(N) group in 3/4-membered ring
+225	sp2 Carbon of C(=N)(N)(N) group in 5-membered ring
+226	sp2 Carbon of C(=N)(N)(N) group in 6-membered ring
+227	sp2 Carbon of C(=N)(N)(N) group in 7-membered ring
+228	sp2 Carbon of C(=N)(N)(N) group in acyclic system
+229	sp2 Carbon of C(=N)(S)() group in 3/4-membered ring
+230	sp2 Carbon of C(=N)(S)() group in 5-membered ring
+231	sp2 Carbon of C(=N)(S)() group in 6-membered ring
+232	sp2 Carbon of C(=N)(S)() group in 7-membered ring
+233	sp2 Carbon of C(=N)(S)() group in acyclic system
+234	sp2 Carbon of C(=N)(N)(C) group in 3/4-membered ring
+235	sp2 Carbon of C(=N)(N)(C) group in 5-membered ring
+236	sp2 Carbon of C(=N)(N)(C) group in 6-membered ring
+237	sp2 Carbon of C(=N)(N)(C) group in 7-membered ring
+238	sp2 Carbon of C(=N)(N)(C) group in acyclic system
+239	sp2 Carbon of C(=N)(O)(C) group in 3/4-membered ring
+240	sp2 Carbon of C(=N)(O)(C) group in 5-membered ring
+241	sp2 Carbon of C(=N)(O)(C) group in 6-membered ring
+242	sp2 Carbon of C(=N)(O)(C) group in 7-membered ring
+243	sp2 Carbon of C(=N)(O)(C) group in acyclic system
+244	sp2 Carbon of C(=N)(C)(C) group in 3/4-membered ring
+245	sp2 Carbon of C(=N)(C)(C) group in 5-membered ring
+246	sp2 Carbon of C(=N)(C)(C) group in 6-membered ring
+247	sp2 Carbon of C(=N)(C)(C) group in 7-membered ring
+248	sp2 Carbon of C(=N)(C)(C) group in acyclic system
+249	sp2 Carbon of C(=N)(H)() / C(=S)(H)() group
+250	S=C-C=S group in 5-member-ring
+251	S=C-C=S group in 6-member-ring
+252	sp2 Carbon of C(=C)(N)(O) group in 3/4-membered ring
+253	sp2 Carbon of C(=C)(N)(O) group in 5-membered ring
+254	sp2 Carbon of C(=C)(N)(O) group in 6-membered ring
+255	sp2 Carbon of C(=C)(N)(O) group in 7-membered ring
+256	sp2 Carbon of C(=C)(N)(O) group in acyclic system
+257	sp2 Carbon of C(=C)(O)(O) group in 3/4-membered ring
+258	sp2 Carbon of C(=C)(O)(O) group in 5-membered ring
+259	sp2 Carbon of C(=C)(O)(O) group in 6-membered ring
+260	sp2 Carbon of C(=C)(O)(O) group in 7-membered ring
+261	sp2 Carbon of C(=C)(O)(O) group in acyclic system
+262	sp2 Carbon of C(=C)(N)(N) group in 3/4-membered ring
+263	sp2 Carbon of C(=C)(N)(N) group in 5-membered ring
+264	sp2 Carbon of C(=C)(N)(N) group in 6-membered ring
+265	sp2 Carbon of C(=C)(N)(N) group in 7-membered ring
+266	sp2 Carbon of C(=C)(N)(N) group in acyclic system
+267	sp2 Carbon of C(=C)(S)() group in 3/4-membered ring
+268	sp2 Carbon of C(=C)(S)() group in 5-membered ring
+269	sp2 Carbon of C(=C)(S)() group in 6-membered ring
+270	sp2 Carbon of C(=C)(S)() group in 7-membered ring
+271	sp2 Carbon of C(=C)(S)() group in acyclic system
+272	sp2 Carbon of C(=C)(C)(N) group in 3/4-membered ring
+273	sp2 Carbon of C(=C)(C)(N) group in 5-membered ring
+274	sp2 Carbon of C(=C)(C)(N) group in 6-membered ring
+275	sp2 Carbon of C(=C)(C)(N) group in 7-membered ring
+276	sp2 Carbon of C(=C)(C)(N) group in acyclic system
+277	sp2 Carbon of C(=C)(C)(O) group in 3/4-membered ring
+278	sp2 Carbon of C(=C)(C)(O) group in 5-membered ring
+279	sp2 Carbon of C(=C)(C)(O) group in 6-membered ring
+280	sp2 Carbon of C(=C)(C)(O) group in 7-membered ring
+281	sp2 Carbon of C(=C)(C)(O) group in acyclic system
+282	sp2 Carbon of C(=C)(C)(H) group in 3/4-membered ring
+283	sp2 Carbon of C(=C)(C)(H) group in 5-membered ring
+284	sp2 Carbon of C(=C)(C)(H) group in 6-membered ring
+285	sp2 Carbon of C(=C)(C)(H) group in 7-membered ring
+286	sp2 Carbon of C(=C)(C)(C) group in 3/4-membered ring
+287	sp2 Carbon of C(=C)(C)(C) group in 5-membered ring
+288	sp2 Carbon of C(=C)(C)(C) group in 6-membered ring
+289	sp2 Carbon of C(=C)(C)(C) group in 7-membered ring
+290	Amide (C(=O)NH-) group present in 3/4-membered ring
+291	Amide (C(=O)NH-) group present in 5-membered ring
+292	Amide (C(=O)NH-) group present in 6-membered ring
+293	Amide (C(=O)NH-) group present in 7-membered ring
+294	Diamide ((C(=O)NHC(=O))) group present in 3/4-membered ring
+295	Diamide ((C(=O)NHC(=O))) group present in 5-membered ring
+296	Diamide ((C(=O)NHC(=O))) group present in 6-membered ring
+297	Diamide ((C(=O)NHC(=O))) group present in 7-membered ring
+298	Thioamide (C(=S)NH-) group present in 3/4-membered ring
+299	Thioamide (C(=S)NH-) group present in 5-membered ring
+300	Thioamide (C(=S)NH-) group present in 6-membered ring
+301	Thioamide (C(=S)NH-) group present in 7-membered ring
+302	Dithioamide ((C(=S)NHC(=S))) group present in 3/4-membered ring
+303	Dithioamide ((C(=S)NHC(=S))) group present in 5-membered ring
+304	Dithioamide ((C(=S)NHC(=S))) group present in 6-membered ring
+305	Dithioamide ((C(=S)NHC(=S))) group present in 7-membered ring
+306	Amidine(NH) group present in 3/4-membered ring
+307	Amidine(NH) group present in 5-membered ring
+308	Amidine(NH) group present in 6-membered ring
+309	Amidine(NH) group present in 7-membered ring
+310	Di-amidine(NH) group present in 3/4-membered ring
+311	Di-Amidine(NH) group present in 5-membered ring
+312	Di-Amidine(NH) group present in 6-membered ring
+313	Di-Amidine(NH) group present in 7-membered ring
+314	Amide (C(=O)NC-) group present in 3/4-membered ring
+315	Amide (C(=O)NC-) group present in 5-membered ring
+316	Amide (C(=O)NC-) group present in 6-membered ring
+317	Amide (C(=O)NC-) group present in 7-membered ring
+318	Diamide ((C(=O)NCC(=O))) group present in 3/4-membered ring
+319	Diamide ((C(=O)NCC(=O))) group present in 5-membered ring
+320	Diamide ((C(=O)NCC(=O))) group present in 6-membered ring
+321	Diamide ((C(=O)NCC(=O))) group present in 7-membered ring
+322	Thioamide (C(=S)NC-) group present in 3/4-membered ring
+323	Thioamide (C(=S)NC-) group present in 5-membered ring
+324	Thioamide (C(=S)NC-) group present in 6-membered ring
+325	Thioamide (C(=S)NC-) group present in 7-membered ring
+326	Dithioamide ((C(=S)NCC(=S))) group present in 3/4-membered ring
+327	Dithioamide ((C(=S)NCC(=S))) group present in 5-membered ring
+328	Dithioamide ((C(=S)NCC(=S))) group present in 6-membered ring
+329	Dithioamide ((C(=S)NCC(=S))) group present in 7-membered ring
+330	Amidine(N) group present in 3/4-membered ring
+331	Amidine(N) group present in 5-membered ring
+332	Amidine(N) group present in 6-membered ring
+333	Amidine(N) group present in 7-membered ring
+334	Di-amidine(N) group present in 3/4-membered ring
+335	Di-Amidine(N) group present in 5-membered ring
+336	Di-Amidine(N) group present in 6-membered ring
+337	Di-Amidine(N) group present in 7-membered ring
+338	-R-C(=S)NH-C(=S)(R)
+339	-R-C(=NH)NHR (Amidine group)
+340	-R-C(=NH)NH-C(=NH)(R)
+341	Amide (N) group in acyclic system
+342	Diamide (N) group in acyclic system
+343	Thioamide (N) group in acyclic system
+344	Dithioamide (N) group in acyclic system
+345	Amidine (N) group in acyclic system
+346	Diamidine (N) group in acyclic system
+347	Ester oxygen present in between two carbonyl groups ((O=)C-O-C(=O))
+348	Ester oxygen present in between two amidine groups ((N=)C-O-C(=N))
+349	Ester oxygen present in between one amidine and one carbonyl groups ((N=)C-O-C(=O))
+350	S=C-C=S group not a part of 3/4/5/6-membered ring
+351	S=C-Ph group in 5-member-ring
+352	S=C-Ph group in 6-member-ring
+353	S=C-Ph group not a part of 3/4/5/6-membered ring
+354	N=C-C=O group in 5-member-ring
+355	N=C-C=O group in 6-member-ring
+356	N=C-C=O group not a part of 3/4/5/6-membered ring
+357	N=C-C=N group in 5-member-ring
+358	N=C-C=N group in 6-member-ring
+359	N=C-C=N group not a part of 3/4/5/6-membered ring
+360	N=C-C=S group in 5-member-ring
+361	N=C-C=S group in 6-member-ring
+362	N=C-C=S group not a part of 3/4/5/6-membered ring
+363	N=C-Ph group in 5-member-ring
+364	N=C-Ph group in 6-member-ring
+365	N=C-Ph group not a part of 3/4/5/6-membered ring
+366	O=C-C=O group in 5-member-ring
+367	O=C-C=O group in 6-member-ring
+368	O=C-C=O group not a part of 3/4/5/6-membered ring
+369	O=C-C=S group in 5-member-ring
+370	O=C-C=S group in 6-member-ring
+371	O=C-C=S group not a part of 3/4/5/6-membered ring
+372	O=C-Ph group in 5-member-ring
+373	O=C-Ph group in 6-member-ring
+374	O=C-Ph group not a part of 3/4/5/6-membered ring
+375	R-N=C-C=O group in 3/4-member-ring
+376	R-N=C-C=C group in 3/4-member-ring
+377	R-N=C-C=N group in 3/4-member-ring
+378	R-N=C-C=S group in 3/4-member-ring
+379	R-N=C-Ph group in 3/4-member-ring
+380	S=C-C=S group in 3/4-member-ring
+381	S=C-Ph group in 3/4-member-ring
+382	N=C-C=O group in 3/4-member-ring
+383	N=C-C=N group in 3/4-member-ring
+384	N=C-C=S group in 3/4-member-ring
+385	N=C-Ph group in 3/4-member-ring
+386	O=C-C=O group in 3/4-member-ring
+387	O=C-C=S group in 3/4-member-ring
+388	O=C-Ph group in 3/4-member-ring
+389	Epoxide in 5-membered ring (C1CCCO1)
+390	Epoxide in 6-membered ring (C1CCCCO1)
+391	Ester Oxygen in 3-member-ring
+392	Ester Oxygen in 4-member-ring
+393	Ester Oxygen in 5-member-ring
+394	Ester Oxygen in 6-member-ring
+395	Ester oxygen in acetic anhydride group in 3-membered ring (e.g.; Oxalic anhydride)
+396	Ester oxygen in acetic anhydride group in 4-membered ring (e.g.; Malonic anhydride)
+397	Ester oxygen in acetic anhydride group in 5-membered ring (e.g.; Succinic anhydride)
+398	Ester oxygen in acetic anhydride group in 6-membered ring (e.g.; Glutaric anhydride)
+399	Oxygen in Iminooxiran
+400	Oxygen in 2-Iminooxetane or its derivatives
+401	Oxygen in Oxolan-2-imine or its derivatives
+402	Oxygen in Oxan-2-imine or its derivatives
+403	Oxygen in C1(C(=N)O1)=N
+404	Oxygen in C1(CC(=N)O1)=N or its derivatives
+405	Oxygen in Oxolane-2,5-diimine or its derivatives
+406	Oxygen in C1(CCCC(=N)O1)=N or its derivatives
+407	Sulfur in Thioether in 5/6/7/8-membered ring (e.g.; Tetrahydrothiophene, Thiane)
+408	N-containing function group which is not commonly observed (say, N(=C)(O)(C))
+409	N-Pyrrolo[1,2-c]triazine (Triazole type nitrogen in 6-membered ring)
+410	Nitrogen in Indolizine
+411	Nitrogen in 1,2,3-Triazine
+412	Nitrogen in Tetrazole ring
+413	Bridge Carbon in Napthelene
+414	Amine (NH) group in conjugation with one vinyl group present in 3/4-membered ring
+415	Amine (NH) group in conjugation with one vinyl group present in 5-membered ring
+416	Amine (NH) group in conjugation with one vinyl group present in 6-membered ring
+417	Amine (NH) group in conjugation with one vinyl group present in 7-membered ring
+418	Amine (NH) group in conjugation with two vinyl group present in 3/4-membered ring
+419	Amine (NH) group in conjugation with two vinyl group present in 5-membered ring
+420	Amine (NH) group in conjugation with two vinyl group present in 6-membered ring
+421	Amine (NH) group in conjugation with two vinyl group present in 7-membered ring
+422	Amine (N) group in conjugation with one vinyl group present in 3/4-membered ring
+423	Amine (N) group in conjugation with one vinyl group present in 5-membered ring
+424	Amine (N) group in conjugation with one vinyl group present in 6-membered ring
+425	Amine (N) group in conjugation with one vinyl group present in 7-membered ring
+426	Amine (N) group in conjugation with two vinyl group present in 3/4-membered ring
+427	Amine (N) group in conjugation with two vinyl group present in 5-membered ring
+428	Amine (N) group in conjugation with two vinyl group present in 6-membered ring
+429	Amine (N) group in conjugation with two vinyl group present in 7-membered ring
+430	Amine (N) in conjugation with one vinyl group in acyclic system
+431	Amine (N) in conjugation with two vinyl groups in acyclic system
+432	Amine (N) group in conjugation with one vinyl and one amide groups
+433	Amine (N) group in conjugation with one vinyl and one thioamide groups
+434	Amine (N) group in conjugation with one imine and one vinyl groups
+435	Amine (N) group in conjugation with one amide and one thioamide groups
+436	Amine (N) group in conjugation with one amide and one imine groups
+437	Amine (N) group in conjugation with one thioamide and one imine groups
+438	Oxygen in Oxirene or Methyleneoxirane or its derivatives
+439	Oxygen in 2H-Oxete or 2-Methylene-oxetane or its derivatives
+440	Oxygen in 2,3-Dihydrofuran or, Tetrahydrofuranylmethyl or its derivatives
+441	Oxygen in 3,4-Dihydro-2H-pyran or, Methylenetetrahydropyran or its derivatives
+442	Oxygen in 2,3-Dimethylideneoxirane
+443	Oxygen in 2,4-Dimethylideneoxetane or its derivatives
+444	Oxygen in 2,5-Dimethylideneoxolane or its derivatives
+445	Oxygen in 2,6-Dimethylideneoxane or its derivatives
+446	Aromatic-Carnobn-contains-double-bonnd (e.g.; 10a-atom-Flavin)
+447	A trivalent Phosphorus-containing compound
+448	R-N=C-NAr group in 5-member-ring
+449	R-N=C-NAr group in 6-member-ring
+450	R-N=C-NAr group in 3/4-member-ring
+451	R-N=C-Nar group not a part of 3/4/5/6-membered ring
+452	-Nar-C(=O)N-R’-
+453	-Nar-C(=O)O-R’-
+454	-Nar-C(=O)S-R’-
+455	-Nar-C(=O)C-R’-
+456	-Nar-C(=O)H
+457	-Nar-C(=N)N-R’-
+458	-Nar-C(=N)O-R’-
+459	-Nar-C(=N)S-R’-
+460	-Nar-C(=N)C-R’-
+461	-Nar-C(=N)C-H
+462	-Nar-C(=C)N-R’-
+463	-Nar-C(=C)O-R’-
+464	-Nar-C(=C)S-R’-
+465	-Nar-C(=C)C-R’-
+466	-Nar-C(=C)H-
+467	-Nar-C(=S)N-R’-
+468	-Nar-C(=S)O-R’-
+469	-Nar-C(=S)S-R’-
+470	-Nar-C(=S)C-R’-
+471	-Nar-C(=S)H
+472	-Nar-C(=O/=N/=S)~ (~ other than S, O, N, C, H are attached)
+473	Sulfoxide (-SO2)
+474	Ssp3-Osp3 / Ssp3-Nsp3
+475	Cationic sp3 N-containing group (say, CH3NH3+)
+476	Carboxylate group
+477	Anionic N-containing group/ Anionic O-containing group other than carboxyate/ Anionic S-containing group
+478	Cationic N group present in Pyridinium ion
+479	Hydrogen atom which is attached with aromatic group
+480	Hydrogen atom which is attached with aliphatic group
+481	Hydrogen atom which is attached with aromatic amine group
+482	Hydrogen atom which is attached with aliphatic amine group
+483	Hydrogen atom which is attached with oxygen
+484	Hydrogen atom which is attached with Sulfur
+485	Cubane ring system
+486	Three 6-membered ring systems when fused with each other
+487	Three 6-membered ring systems when fused with each other in aromatic system
+488	Two 6-membered and one 5-membered ring systems when fused with each other
+489	Two 5-membered and one 6-membered ring systems when fused with each other
+490	One 5-membered, one 6-membered and one 7-membered ring systems when fused with each other
+491	Two 6-membered and one 7-membered ring systems when fused with each other
+492	Two 5-membered and one 7-membered ring systems when fused with each other
+493	Three 5-membered ring systems when fused with each other
+494	Two 4-membered and one 3-membered ring systems when fused with each other
+495	Amide(N) group present in 3/4 membered ring
+496	Amide(N) group present in 5/6/7 membered ring
+497	Diamide(N) group present in 3/4 membered ring
+498	Diamide(N) group present in 5/6/7 membered ring
+499	Thioamide(N) group present in 3/4 membered ring
+500	Thioamide(N) group present in 5/6/7 membered ring
+501	Dithioamide(N) group present in 3/4 membered ring
+502	Dithioamide(N) group present in 5/6/7 membered ring
+503	Amidine(N) group present in 3/4 membered ring
+504	Amidine(N) group present in 5/6/7 membered ring
+505	Diamidine(N) group present in 3/4 membered ring
+506	Diamidine(N) group present in 5/6/7 membered ring
+507	Vinylamine(N) group present in 3/4 membered ring
+508	Vinylamine(N) group present in 5/6/7 membered ring
+509	Divinylamine(N) group present in 3/4 membered ring
+510	Divinylamine(N) group present in 5/6/7 membered ring
+511	Imidazolium ion
+512	3-member ring
+513	4-member ring
+514	5-member ring
+515	6-member ring
+516	7-member ring
+517	8-member ring

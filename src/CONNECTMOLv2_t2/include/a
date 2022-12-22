@@ -1,0 +1,52 @@
+2a3
+> #include <queue>
+6d6
+< #include <queue>
+86d85
+< //	cout << "GRAPH CONSTRUCTOR CALLED" << endl;
+160c159,160
+< 	if(!tmp) cout << "INSUFFICIENT MEMORY - Graph::makeVertex()" << endl;
+---
+> 	if(!tmp)
+> 		cout << "INSUFFICIENT MEMORY - Graph::makeVertex()" << endl;
+208c208,209
+< 	if(!tmp) cout << "INSUFFICIENT MEMORY - Graph::makeEdge()" << endl;
+---
+> 	if(!tmp)
+> 		cout << "INSUFFICIENT MEMORY - Graph::makeEdge()" << endl;
+371,374c372,376
+< 	vertex<T> *tmpVert1, *tmpVert2;
+< 	edge<T>   *tmpEdge;
+< 	std::queue <vertex<T>* > que;	//que -> holds the vertex element using the properties enqueue(to insert),deque 
+< 	vector<int> originList,queList,pathList;	//list->traversal linklist,originList->maintain 
+---
+> 
+> 	vertex<T>* tmpVert1,*tmpVert2;
+> 	edge<T>* tmpEdge;
+> 	queue<vertex<T>* > que;////que -> holds the vertex element using the properties  enqueue(to insert), dequeue(to take out) 
+> 	vector<int> originList,queList,pathList;//list->traversal linklist,originList->maintain all the origin list,queList->insert all the vertex elements
+459a462
+> 
+465c468
+< 	std::queue< vertex<T>* > que; 
+---
+> 	queue<vertex<T>* > que; 
+510c513
+< 	return tmpVert2->distance;
+---
+> 	return tmpVer2->distance;
+513a517
+> 
+520c524
+< 	std::queue< vertex<T>* > que;////que -> holds the vertex element using the properties  enqueue(to insert), dequeue(to take out) 
+---
+> 	queue<vertex<T>* > que;////que -> holds the vertex element using the properties  enqueue(to insert), dequeue(to take out) 
+576c580
+< 	std::queue< vertex<T>*> que;
+---
+> 	queue<vertex<T>*> que;
+753,754c757
+< 	clear();
+< //	cout << "GRAPH DESTRUCTOR CALLED"<<endl;
+---
+> 	clear();			

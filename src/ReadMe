@@ -1,0 +1,343 @@
+#>  Programme name: bond_order_calc.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: Correct the bond order between C-C, C-N, C-H, N-H, O-H and S-H bonds in a molecule.
+ * How to run:
+ * g++ bond_order_calc.c -o bond_order_calc.exe
+ * ./bond_order_calc.exe <Input pdb file> <A concatenate bond order printed by bond_order_CM.exe and bond_order_sdf.exe programmes>
+ * If the bond order between two atoms are different by the output of bond_order_CM.exe and bond_order_sdf.exe programmes,
+ * then this programme check the bond distance between atoms and guess a bond order for the following bonds present in a molecule:
+ *  C-C, C-N, C-H, N-H, O-H and S-H 
+ *  Since, the bond order printed by CONNECTMOL and babel programmes sometimes differ betwen these pairs of atoms. Hence, I wrote this programme to crosscheck and print a correct bond order between them if their bond order is differ by both the programmes.
+*/
+
+#>  Programme name: bond_order_CM.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: Print aromatic atom bond order between atoms in a molecule which is the output of CONNECTMOL programme
+ * How to run:
+ * g++ bond_order_CM.c -o bond_order_CM.exe
+ * ./bond_order_CM.exe <Output of CONNECTMOL programme>
+*/
+
+#>  Programme name: bond_order_correct.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: If there is a difference between bond order of C-C, C-N, C-H, N-H, O-H and S-H bonds as printed by CONNECTMOL and babel programmes, then this programme printed the bond order as per output of bond_order_calc.exe programme. This programme assign aromatic bond order as 4.
+ * How to run:
+ * g++ bond_order_correct.c -o bond_order_correct.exe
+ * ./bond_order_correct.exe <A concatenate bond order printed by bond_order_CM.exe, bond_order_sdf.exe and bond_order_calc.exe programmes>
+*/
+
+#>  Programme name: bond_order_correct_mol2.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: Print bond order between atoms in a molecule from mol2 format to CONNECTMOL bond order format
+ * How to run:
+ * g++ bond_order_correct_mol2.c -o bond_order_correct_mol2.exe
+ * ./bond_order_correct_mol2 <Input bond order file obtained from mol2 format>
+*/
+
+#>  Programme name: bond_order_correct_sdf.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: This programe print the bond order present in a sdf file as per CONNECTMOL prited bond order format. Although as an input it takes a concatenate bond order printed by bond_order_CM.exe, bond_order_sdf.exe and bond_order_calc.exe programmes, instead of sdf file. The output of this programme is later used by lp2.exe
+ * How to run:
+ * g++ bond_order_correct_sdf.c -o bond_order_correct_sdf.exe
+ * ./bond_order_correct_sdf.exe <A concatenate bond order printed by bond_order_CM.exe, bond_order_sdf.exe and bond_order_calc.exe programmes>
+*/
+
+#>  Programme name: bond_order_mol2.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: Print bond order between atoms in a molecule from a mol2 file as printed by babel programme.
+ * How to run:
+ * g++ bond_order_mol2.c -o bond_order_mol2.exe
+ * ./bond_order_mol2.exe <Input mol2 file>
+*/
+
+#>  Programme name: bond_order_sdf.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: Print bond order between atoms from a sdf file of a molecule.
+ * How to run:
+ * g++ bond_order_sdf.c -o bond_order_sdf.exe
+ * ./bond_order_sdf.exe <Input sdf file>
+ * e.g.;
+ * ./a.out test.sdf
+*/
+
+#>  Programme name: check_fc_imidazole.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: This program compute the formal charge of sp2 nitrogen atom and print the charge if contains >0 formal charge.
+ * How to run:
+ * ./check_fc_imidazole.exe <Output file of lp44.exe and lp7.exe>
+*/
+
+#>  Programme name: grep.c
+/*
+ * Written by Goutam Mukherjee
+ *Purpose: Grep line number which is start with ATOM and CONNECT in a file.
+ * How to run:
+ * ./grep.exe <Output of CONNECTMOL programme>
+*/
+
+#>  Programme name: lp1.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ *Purpose: Print atom symbol of atoms present in a ligand (non-standard) molecule.
+ * How to run:
+ * ./lp1.exe <ligand name with extension (.pdb)> <output file>
+*/
+
+#>  Programme name: lp2.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ *Purpose: Print atom type of ligand (non-standard) molecule.
+ * How to run:
+ * ./lp2.exe <Output file of Connect2.0.exe> <Output of lp1.exe> <Output file name> 
+ * Say, for Methane (CH4) molecule, this program will generate the following outout:
+ * CH1CH1CH1CH1 (Carbon atom of methane)
+ * HC1          (Hydrogen of methane)
+ * HC1          (Hydrogen of methane)
+ * HC1          (Hydrogen of methane)
+ * HC1          (Hydrogen of methane)
+*/
+
+#>  Programme name: lp3.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ *Purpose: Extract CONNECT Part from the Connect2.0.exe output.
+ * How to run:
+ * ./lp3.exe <Output file of Connect2.0.exe> <Output file name> 
+ * Please note here, This can also be done by "grep" command
+ * egrep "CONNECT" <Output file of Connect2.0.exe>
+*/
+
+#>  Programme name: lp4.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: This program concatenate a three letter nomenclature at the end of the atomtype printed by lp2.exe programme
+ * The list of nomenclaures are given below:
+ * NEG: Negatively charge group
+ * POS: Positively charge group
+ * EST: When a sp3 oxygen is attached with one carbonyl (C=O) group or, a sp3 Sulfur group is attached with C=S or C=O group
+ * DST: When a sp3 oxygen is attached with two carbonyl (C=O) groups
+ * DIN: When a sp3 oxygen is attached with two C=N groups
+ * DON: When a sp3 oxygen is attached with one C=N and one C=O groups
+ * ENL: When a alcoholic oxygen atom is attached with C=C group
+ * ELN: When a alcoholic oxygen atom is attached with C=N group
+ * ENE: When a ether type oxygen is attached with one C=C group
+ * DNE: When a ether type oxygen is attached with two C=C groups
+ * OCN: When a ether type oxygen is attached with one C=N group
+ * DCN: When a ether type oxygen is attached with two C=N groups
+ * NTO: sp3 monovalent Oxygen is attached with N=O group
+ * CO3: sp3 monovalent Oxygen is attached with Carbonate group
+ * AMD: sp3 nitrogen atom when atached with one C=O group
+ * DAM: sp3 nitrogen atom when atached with two C=O groups
+ * MTD: sp3 nitrogen atom when atached with one C=S group
+ * DTD: sp3 nitrogen atom when atached with two C=S groups
+ * UER: sp3 nitrogen atom when atached with one C=N group
+ * DUR: sp3 nitrogen atom when atached with two C=N groups
+ * NYL: sp3 nitrogen atom when atached with one C=C group
+ * DYL: sp3 nitrogen atom when atached with two C=C groups
+ * BDG: When a Carbon atom is a part of three 6-membered rings/two six membered rings and one five member ring/three five membered ring/thee four membered ring systems (Here I have not considered all the combinations of rings rather taking commonly observed molecules. Say, Carbon atom associated with three four membered rings represent Cubane molecule. Where as I here ignore, Carbon associated with a combination of four and five or, four and six or, four, five and six membered rings. They are not commonly observed molecule)
+ * C2S: When a sulfer is attached with a C=S group
+ * CJO: When a C=O/C=N/C=S group is attached with C=C group
+ * CJC: When a C=C is attached with C=C group
+ * CJB: When a aromatic functional group is attached with C=C group
+ * CNJ: When a aromatic nitrogen is attached with C=C/C=N/C=O/C=S groups
+ * CNO: When a C=O group is attached with C=N group 
+ * CNN: When a C=N group is attached with C=N group
+ * CNS: When a C=S group is attached with C=N group
+ * CNB: When a aromatic fuctional group is attached with C=N group
+ * COO: When a C=O group is attached with C=O group
+ * COS: When a C=S group is attached with C=O group
+ * COB: When a aromatic functional group is attached with C=O group
+ * CSS: When a C=S group is attached with C=S group
+ * CSB: When a aromatic fuctional group is attached with C=S group
+ * NJO: When a Carbon end of C=O group is attached with nitrogen of N=C group
+ * NJN: When a carbon end of C=N group is attached nitrogen of with N=C group
+ * NJS: When a carbon end of C=S group is attached nitrogen of with N=C group
+ * NJB: When a aromatic group is attached nitrogen of with N=C group
+ * NNJ: When a nitrogen containing aromatic group is attached nitrogen of with N=C group
+ * ARM: Hydrogen attached with aromatic carbon
+ * IMD: Hydrogen attached with imidazole nitrogen
+ * How to run:
+ * ./lp4.exe <Output file of ring_edit.exe> <Output file of lp3.exe> <Output file name> 
+*/
+
+#>  Programme name: lp44.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: This program concatenate a three letter nomenclature, IMZ, at the end of the C2 of Imidazole atomtype printed by ring_edit.exe and lp3.exe programme
+ * How to run:
+ * ./lp6.exe <Output file of ring_edit.exe> <Output file of lp3.exe> <Output file name> 
+*/
+
+#>  Programme name: lp5.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: This program concatenate a three letter nomenclature at the end of the atomtype printed by lp4.exe programme
+ * The list of nomenclaures are given below:
+ * PMe: Methyl group
+ * SMe: Methylene group
+ * TMe: Tert methyl group
+ * QMe: Quaternary methyl group
+ * How to run:
+ * ./lp5.exe <Output file of lp4.exe>
+*/
+
+#>  Programme name: lp6.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: This program will concatenate "SMe" to the methylene group when the adjacent functional group also contains "SMe" group.
+ * How to run:
+ * ./lp6.exe <Output file of lp5.exe> <Output file of lp3.exe> <Output file name> 
+*/
+
+
+#>  Programme name: lp7.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: This program will concatenate "RTO" to the acyclic methylene group when the atomtype string of methylene group contains SMeSMe string or, this programme concatenate "RTO" to the cyclic methylene group when the atomtype string of methylene group contains SMeSMeSMe string
+ * How to run:
+ * ./lp7.exe <Output file of lp6.exe>
+*/
+
+#>  Programme name: lp8.c
+/*
+ * Written by Goutam Mukherjee
+ *Purpose: Print functional groups present in a molecule.
+ * How to run:
+ * ./lp8.exe <Output of lp7.exe>
+*/
+
+#>  Programme name: lp9.c
+/*
+ * Written by Goutam Mukherjee
+ *Purpose: Print the number of rings present in a molecule. Say, in cyclobutane, this programme print one 4-Member-Ring
+ * How to run:
+ * ./lp9.exe <Output of ring.exe programme>
+*/
+
+#>  Programme name: logp_mr_calc_5.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ *Purpose: This program differentiate atom types of different types.
+ *Say, in Toluene (a benzene ring with one methyl group attach, Ph-CH3), all the six carbons are not similar. 5 Carbons of benzne ring are same and the carbon of benzene where, methyl group is attach is different than the other 5 carbons. Hence, to differentiate this carbon atom where methyl group is attached, this program add a new three letter nomenclature, "CMe", with the benzene carbon.
+In order to differentiate the methyl group which is attach with non-aromatic and aromatic group, this program will add a new three letter nomenclature, "CC4", with the benzylic carbon.
+Thus, this program will differentiate atom types of different types.
+ * How to run:
+ * ./logp_mr_calc_5.exe <bond order of each of the atoms in a molecule, outout of lp4.pl program> <Output file of lp2.exe> <Output file of lp3.exe> <Output file name> 
+*/
+
+#>  Programme name: logp_mr_calc_6.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ *Purpose: This program will concatenate Phosphorus (P) atom types with all the neighbouring group atom types which are attach with P atom
+ *Say, in Fosinopril molecule, there is one P atom which is connected with two carbons atoms and one double bonded oxygen and one single bonded oxygen. Therefore, the primary atom types of P atom:
+ *PC1PC1PO1PO2
+ *This program will concatenate all the neighbouring group atom types which are attach with P atom. It means,
+ *The atom types of two carbon atoms and two oxygen atoms will be concatenated with the central P atom by this program. The final atom type of P atom:
+ *PC1PC1PO1PO2 CC1CP1CH1CH1 CC1CP1CH1CH1 OC1OP1 OP2
+ * How to run:
+ * ./logp_mr_calc_6.exe <Output file of logp_mr_calc_5.exe> <Output file of lp3.exe> <Output file name> 
+*/
+
+
+#>  Programme name: logp_mr_calc_7.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ *Purpose: This program will print the atom types of atoms in a molecule as per nomenclature given by Scott A. Wildman and Gordon M. Crippen in their work (J. Chem. Inf. Comput. Sci. 1999, 39, 868).
+ * How to run:
+ * ./logp_mr_calc_7.exe <Output file of logp_mr_calc_6.exe> <Output file name> 
+*/
+
+#>  Programme name: logp_mr_calc_8.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ *Purpose: This program fetch the values of logP and MR for the atom types of atoms in a molecule from the work of Scott A. Wildman and Gordon M. Crippen (J. Chem. Inf. Comput. Sci. 1999, 39, 868).
+ * How to run:
+ * ./logp_mr_calc_8.exe <Output file of logp_mr_calc_7.exe> <Output file name1> <Output file name2> 
+*/
+
+#>  Programme name: mass.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ * Purpose: Calculate moleular weight of small drug-like molecule
+ * Input is a pdb file without chain information of a ligand
+ */
+
+#>  Programme name: pdbarrange.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ * Purpose: This program will arrange the atoms present in pdb file. It first print carbon atoms corresponding line from a pdb file then, nitrogen, oxygen and followed S, P, halogens and H atoms. 
+ */
+
+#>  Programme name: pdbtopdb.c
+/*
+ * This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+ * Written by Goutam Mukherjee
+ *Purpose: Format a pdf file of ligand (non-standard) molecule.
+ * How to run:
+ * ./pdb2pdb.exe <ligand name with extension (.pdb)> <output.pdb>
+ * say,
+ * ./pdb2pdb.exe ligand.pdb output.pdb
+ * This programme conver a non-standard to standard pdb format
+ * The information about standard pdb format can be found at 
+ * http://www.scfbio-iitd.res.in/software/drugdesign/PDBFormat.pdf
+*/
+
+#>  Programme name: ring.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: It will print the atom rank amd size of the ring in two different columns.
+ * Input file, say:
+ * 6      6 9 15 12 7 4 (first column is always as ring size and rest are atom rank)
+ * Outout of this programme:
+ * 7    6MR
+ * 10   6MR
+ * 16   6MR
+ * 13   6MR
+ * 8    6MR
+ * 5    6MR
+ * How to run:
+ * ./ring.exe <Information of ring obtained from RDKit package>
+*/
+
+#>  Programme name: ring_edit.c
+/*
+ * Written by Goutam Mukherjee
+ * Purpose: This programme paste the ring size information to the output of lp2.exe programme. The output of lp2.exe programme is the atom type of an atom in a molecule.
+ * How to run:
+ * ./ring_edit.exe <Output of lp2.exe> <Output of ring.exe>
+*/
+
+#>  Programme name: windex_single.cpp
+/* This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
+**To calculate the weiner index of a molecule from a PDB file.
+WORKING:
+      1.Searches for lines starting with "ATOM" or "HETATM" to calculate the number of atom in molecule
+      2.Creates a graph with number of nodes = number of atoms.
+      3.Searches for lines starting with "CONECT" and then adds edges between relevant atoms using functions processline()  and addEdge().
+      4.Stores Bond Order between atoms in array bond[][];
+      5.Runs Dijkstra's algorithm to establish shortest path between atoms and stores this information in array windex[][]
+      6.Calculates and prints the Weiner index
+
+USAGE : Usage: ./windex_list.exe <PDB file>
+WARNINGS: Program takes a specific format of PDB file, example file appended at the end
+DEPENDENCIES:PDB file
+Author: Abhinav Singh      Created: 06-07-2014     Modified: 10-07-2014
+Status: Completed
+**/

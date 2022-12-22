@@ -1,0 +1,10 @@
+name: fgcount
+channels:
+  - defaults
+  - openbabel
+  - rdkit
+dependencies:
+  - pip=19.0.3
+  - python=3.6
+  - rdkit
+  - openbabel=2.4.1
