@@ -42,7 +42,8 @@ Step 5: Compile all the C/C++-codes which are there inside the src/ folder
 
 Step 6: Run the script anywhere except inside the bin/, config/, scripts/ and src/ folder
 
-How to run the script:
+
+## How to run the script:
 
 bash script.sh Filename
 
