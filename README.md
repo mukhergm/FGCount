@@ -32,7 +32,7 @@ Step 3: conda env create -f fgcount.yml
 
 Step 4: Edit the init file which is located inside the "config/" folder and source the init file (source init.sh)
 
-Step 5: Compile all the C-code which is there inside the src/ folder
+Step 5: Compile all the C/C++-codes which are there inside the src/ folder
 	
 	cd src
 	
