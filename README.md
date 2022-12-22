@@ -44,13 +44,13 @@ Step 6: Run the script anywhere except inside the bin/, config/, scripts/ and sr
 
 How to run the script:
 
-bash script.sh <Filename>
+bash script.sh Filename
 
 e.g.;
 
-if you have a SMILES code of an organic ligand molecule and the file name is molecule.smi then, run the following command
+if you have a SMILES code of an organic ligand molecule (asp) and the file name is asp.smi then, run the following command without .smi extention
 
-bash script.sh molecule
+bash script.sh asp
 
 Output file: 
 
