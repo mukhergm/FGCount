@@ -33,9 +33,12 @@ Step 3: conda env create -f fgcount.yml
 Step 4: Edit the init file which is located inside the "config/" folder
 
 Step 5: Compile all the C-code which is there inside the src/ folder
+	
 	cd src
+	
 	make
-	Ignore messages
+
+	(Ignore messages)
 
 Step 6: Run the script anywhere except inside the bin/, config/, scripts/ and src/ folder
 
