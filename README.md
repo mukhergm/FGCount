@@ -28,18 +28,16 @@ Step 1: Copy FGCount.git folder to your account
 
 Step 2: Install miniconda
 
-Step 3: go to the "programme" folder just, cd programme
+Step 3: conda env create -f fgcount.yml
 
-Step 4: conda env create -f fgcount.yml
+Step 4: Edit the init file which is located inside the "config/" folder
 
-Step 5: Edit the init file which is located inside the "config/" folder
-
-Step 6: Compile all the C-code which is there inside the src/ folder
+Step 5: Compile all the C-code which is there inside the src/ folder
 	cd src
 	make
 	Ignore messages
 
-Step 7: Run the script anywhere except inside the bin/, config/, scripts/ and src/ folder
+Step 6: Run the script anywhere except inside the bin/, config/, scripts/ and src/ folder
 
 How to run the script:
 
