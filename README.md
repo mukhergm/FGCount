@@ -26,7 +26,7 @@ In this folder a script file, init.sh, resides. It is required to source the roo
 
 Step 1: Copy FGCount.git folder to your account
 
-Step 2: Install miniconda
+Step 2: Install miniconda (https://docs.conda.io/en/latest/miniconda.html)
 
 Step 3: conda env create -f fgcount.yml
 
