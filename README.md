@@ -36,7 +36,7 @@ Step 3: create a conda environment as
 
 Step 4: Edit the init file which is located inside the "config/" folder and source the init file 
 	
-	source init.sh
+	source config/init.sh
 
 Step 5: Compile all the C/C++-codes which are there inside the src/ folder
 	
