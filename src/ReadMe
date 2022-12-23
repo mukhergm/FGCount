@@ -323,21 +323,3 @@ Thus, this program will differentiate atom types of different types.
  * How to run:
  * ./ring_edit.exe <Output of lp2.exe> <Output of ring.exe>
 */
-
-#>  Programme name: windex_single.cpp
-/* This is a part of RASPD+ code (https://github.com/HITS-MCM/RASPDplus)
-**To calculate the weiner index of a molecule from a PDB file.
-WORKING:
-      1.Searches for lines starting with "ATOM" or "HETATM" to calculate the number of atom in molecule
-      2.Creates a graph with number of nodes = number of atoms.
-      3.Searches for lines starting with "CONECT" and then adds edges between relevant atoms using functions processline()  and addEdge().
-      4.Stores Bond Order between atoms in array bond[][];
-      5.Runs Dijkstra's algorithm to establish shortest path between atoms and stores this information in array windex[][]
-      6.Calculates and prints the Weiner index
-
-USAGE : Usage: ./windex_list.exe <PDB file>
-WARNINGS: Program takes a specific format of PDB file, example file appended at the end
-DEPENDENCIES:PDB file
-Author: Abhinav Singh      Created: 06-07-2014     Modified: 10-07-2014
-Status: Completed
-**/
