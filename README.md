@@ -7,7 +7,7 @@ gcc, g++, make
 
 
 ## Folder structure
-src/: 
+**src/:** 
 This folder contains all C/C(++)-programs to count functional groups from a molecule. 
 
 bin/: 
