@@ -11,13 +11,13 @@ src/:
 This folder contains all C/C(++)-programs to count functional groups from a molecule. 
 
 bin/: 
-This folder contains all executable files
+This folder is empty, but will contains executable files (*.exe) after running "make" command inside the src/ folder
 
 scripts/: 
 This folder contains all scripts which call all the executable files from bin folder to count the functional groups of a molecule
 
 example/: 
-This folder contains a few example input files (molecule.smi and test.pdb), and results of test run can be found at descriptors.txt file 
+This folder contains an example input file (asp.smi), and a script.sh file 
 
 config/: 
 In this folder a script file, init.sh, resides. It is required to source the root of the cloned repository (e.g.; /home/<*user name*>/FGCount) and path to your conda installation eg, /home/<*user name*>/miniconda3
