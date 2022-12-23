@@ -16,11 +16,11 @@ This folder is empty, but will contains executable files (*.exe) after running "
 **scripts/:** 
 This folder contains all scripts which call all the executable files from the bin folder to count the functional groups in a molecule. The main script file is script.sh
 
-**example/:** 
-This folder contains an example input file (asp.smi) and a script.sh file 
-
 **config/:** 
 In this folder a script file, init.sh, resides. It is required to source the root of the cloned repository (e.g.; /home/<*user name*>/FGCount) and path to your conda installation eg, /home/<*user name*>/miniconda3
+
+**example/:** 
+This folder contains an example input file (asp.smi) and a script.sh file 
 
 ## How to install:
 
