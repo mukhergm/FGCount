@@ -34,7 +34,7 @@ Step 3: create a conda environment as
 	
 	conda env create -f fgcount.yml
 
-Step 4: Edit the init file which is located inside the "config/" folder and source the init file 
+Step 4: Edit the init file which is located inside the "config/" folder and source the file as
 	
 	source config/init.sh
 
