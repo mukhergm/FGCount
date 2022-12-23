@@ -20,7 +20,7 @@ example/:
 This folder contains a few example input files (molecule.smi and test.pdb), and results of test run can be found at descriptors.txt file 
 
 config/: 
-In this folder a script file, init.sh, resides. It is required to source the root of the cloned repository (e.g.; programme) and path to your conda installation eg, /home/<user name>/miniconda3
+In this folder a script file, init.sh, resides. It is required to source the root of the cloned repository (e.g.; /home/<user name>/FGCount) and path to your conda installation eg, /home/<user name>/miniconda3
 
 ## How to install:
 
