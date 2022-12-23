@@ -14,7 +14,7 @@ This folder contains all C/C(++)-programs to count functional groups from a mole
 This folder is empty, but will contains executable files (*.exe) after running "make" command inside the src/ folder
 
 **scripts/:** 
-This folder contains all scripts which call all the executable files from bin folder to count the functional groups of a molecule
+This folder contains all scripts which call all the executable files from the bin folder to count the functional groups in a molecule. The main script file is script.sh
 
 **example/:** 
 This folder contains an example input file (asp.smi), and a script.sh file 
