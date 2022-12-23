@@ -57,6 +57,6 @@ bash script.sh asp
 
 Output file: 
 
-	Descriptors_Final.txt <---This file contains counting of functional groups in a given molecule as SMILES string
+	Descriptors_Final.txt <---In this file counting of functional groups is printed in a column (semicolon seperated) for a query SMILES string
 	
-	FG_Binary.txt <---This file contains occurance of functional groups (binary file line a fingerprint) in a molecule
+	FG_Binary.txt <---This file contains occurance of functional groups (binary file line a fingerprint) for the same query
