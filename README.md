@@ -51,7 +51,7 @@ bash script.sh Filename
 
 e.g.;
 
-if you have a SMILES code of an organic ligand molecule and the file name is asp.smi then, run the following command without .smi extention
+If you have a SMILES code of an organic ligand molecule and the file name is asp.smi then, run the following command without .smi extention
 
 	bash script.sh asp
 
