@@ -110,12 +110,7 @@ then
 			awk -F \; '{for(i=1;i<=NF;i++) print $i}' Descriptors_Final.txt | sed -n 1,517p | awk '{if($1 != 0) print 1; else print 0}' | awk '{printf($1)}' | awk '{print($1)}' >>FG_Binary.txt
 			conda deactivate
 			
-			mkdir tmp_folder_name
-			mv * tmp_folder_name
-			cd tmp_folder_name
-			mv script.sh FG_Binary.txt Descriptors_Final.txt $line".smi" ../
-			cd ../
-			rm -rf tmp_folder_name
+			rm arrangeline $line"_descriptors.txt" bondorder* kk LOGP LPMR1 lst Molecular_Weight MR new_bo output.log physicochemical_descriptors ring_info ring.txt RR temp.con test* tmp*
 		fi
 	fi	
 fi
