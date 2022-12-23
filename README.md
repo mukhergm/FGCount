@@ -59,6 +59,6 @@ If you have a SMILES code of an organic ligand molecule and the file name is asp
 
 Output file: 
 
-	**Descriptors_Final.txt:** In this file counting of functional groups is appended in a column (semicolon seperated) for a query SMILES string
+	>Descriptors_Final.txt: In this file counting of functional groups is appended in a column (semicolon seperated) for a query SMILES string
 	
 	**FG_Binary.txt:** In this file occurance of functional groups (binary file line a fingerprint) is appended for the same query
