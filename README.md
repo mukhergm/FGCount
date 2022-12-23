@@ -29,6 +29,8 @@ Step 1: Copy FGCount.git folder to your account
 Step 2: Install miniconda (https://docs.conda.io/en/latest/miniconda.html)
 
 Step 3: create a conda environment as 
+
+	cd FGCount/
 	
 	conda env create -f fgcount.yml
 
