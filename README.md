@@ -64,7 +64,7 @@ Output file:
 	• FG_Binary.txt: In this file, occurance of functional groups (binary file line a fingerprint) is there for the same query
 
 
-## A description of 517 FGSFs can be found in Supporting Information (SI) Table 5 of the following link:
+## A description of 517 FGSFs can be found in Supporting Information (SI) Table S5 of the following link:
 	https://ndownloader.figstatic.com/files/39506852
 
 	https://pubs.acs.org/doi/10.1021/acs.jcim.3c00050
