@@ -65,6 +65,6 @@ Output file:
 
 
 ## A description of 517 FGSFs can be found in Supporting Information (SI) Table S5 of the following link:
-	https://ndownloader.figstatic.com/files/39506852
+https://ndownloader.figstatic.com/files/39506852
 
-	https://pubs.acs.org/doi/10.1021/acs.jcim.3c00050
+https://pubs.acs.org/doi/10.1021/acs.jcim.3c00050
